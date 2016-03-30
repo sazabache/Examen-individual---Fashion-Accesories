@@ -1,0 +1,13 @@
+@mixin ulstyle{
+	list-style: outside none none;
+	margin: 0;
+	padding: 0
+}
+@mixin astyle{
+	color: $texto;
+	font-size: 12px;
+	&:hover, &:focus{
+		color: $gris-arrows;
+		text-decoration: none;
+	}
+}

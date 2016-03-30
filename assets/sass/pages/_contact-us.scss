@@ -1,0 +1,23 @@
+.bg-cont{
+    background: url(../images/contact.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding-bottom: 135px;
+    padding-top: 135px;
+    margin-bottom: 25px;
+    h2 {
+	    background: $rosa none repeat scroll 0 0;
+	    color: $blanco;
+	    font-size: 70px;
+	    font-weight: bold;
+	    margin-bottom: 10px;
+	    padding: 10px;
+	    font-family: "Raleway",sans-serif;
+	}
+	.txt-cont{
+		color: $blanco;
+		.cont-especific{
+			padding-left: 25px;
+		}
+	}
+}

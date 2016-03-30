@@ -1,0 +1,37 @@
+mixin inputWithTextContent(name)
+	!='<input type="text" placeholder="'+name+'"></input>'
+
+mixin sector(title , price, text)
+	.descripcion.text-center
+		.nombre= title
+		.calification
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star-o
+			i.fa.fa-star-o
+		.precio
+			a(href="#")
+				strike.errased= price
+				span.data= text
+				if block
+					block
+mixin sector2(title, price, text)
+	.des
+		.nombre= title
+		.precio
+			a(href="#")
+				strike.errased= price
+				span.data= text
+		.calification
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star
+			i.fa.fa-star-o
+			i.fa.fa-star-o
+		a.box(href="#")
+			i.fa.fa-shopping-cart
+			span Add to Cart
+			if block
+				block
+			

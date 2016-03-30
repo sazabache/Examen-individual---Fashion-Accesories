@@ -1,0 +1,223 @@
+include mixins
+doctype
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		title Home | Fashion Accesories
+		link(href="css/bootstrap.min.css" rel="stylesheet")
+		link(href="css/main.css" rel="stylesheet")
+		link(href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css")
+	body
+		include head
+		section#main-slider.no-margin
+			.carousel.slide
+				ol.carousel-indicators
+					li.active(data-target="#main-slider" data-slide-to="0")
+					li(data-target="#main-slider" data-slide-to="1")
+				.carousel-inner
+					.item.active.item-a
+						.container
+							.row
+								.col-sm-12
+									.carousel-content.centered
+										h2.text-center.aut AUTUMN/WINTER LOOKBOOK
+										p.text-center.aut2 - 2016 COLLECTION -
+		.publicidad
+			.container
+				.row
+					.col-sm-5.col-md-5
+						.cartel
+							a(href="#")
+								img(src="./images/banner1.jpg")
+					.col-sm-7.col-md-7
+						.cartel
+							a(href="#")
+								img(src="./images/banner2.jpg")
+		.latest
+			.container
+				.row
+					.col-md-4
+						hr
+						hr
+					.col-md-4
+						ul
+							li
+								i.fa.fa-angle-left
+							li 
+								a LATEST
+							li 
+								a BESTSELLER
+							li
+								a SALE
+							li
+								i.fa.fa-angle-right
+					.col-md-4
+						hr
+						hr
+		.productline
+			.container
+				.row
+					.col-md-3.col-xs-12
+						.case
+							img.uno(src="./images/a1.jpg")
+							+sector('Deliver Wide','','$218.00')
+					.col-md-3.col-xs-12
+						.case
+							img.dos(src="./images/b1.jpg")
+							+sector('Deliver Wide','$242.00','$218.00')
+					.col-md-3.col-xs-12
+						.case
+							img.tres(src="./images/c1.jpg")
+							+sector('Deliver Wide','$242.00','$218.00')
+					.col-md-3.col-xs-12
+						.case
+							img.cuatro(src="./images/d1.jpg")
+							+sector('Deliver Wide','','$218.00')
+		.clientes
+			.container
+				.row
+					.client.text-center
+						a(href="")
+							img(src="./images/client1.jpg" alt="")
+						a(href="")
+							img(src="./images/client2.jpg" alt="")
+						a(href="")
+							img(src="./images/client3.jpg" alt="")
+						a(href="")
+							img(src="./images/client4.jpg" alt="")
+						a(href="")
+							img(src="./images/client5.jpg" alt="")
+						a(href="")
+							img(src="./images/client6.jpg" alt="")
+		.latest
+			.container
+				.row
+					.col-md-4
+						hr
+						hr
+					.col-md-4
+						ul.pdd-lft
+							li
+								i.fa.fa-angle-left
+							li 
+								a CLOTHING
+							li 
+								a EQUIPMENTS
+							li
+								a JEWERLY
+							li
+								i.fa.fa-angle-right
+					.col-md-4
+						hr
+						hr
+		.productos
+			.container
+				.row
+					.col-md-4
+						.imag
+							img(src="./images/a2.jpg" alt="")
+						+sector2('Deliver Wide','$242.00','$218.00')		
+					.col-md-4
+						.imag
+							img(src="./images/d2.jpg" alt="")
+						+sector2('Deliver Wide','','$218.00')
+					.col-md-4
+						.imag
+							img(src="./images/g2.jpg" alt="")
+						+sector2('Deliver Wide','','$218.00')
+				.row
+					.col-md-4
+						.imag
+							img(src="./images/c2.jpg" alt="")
+						+sector2('Deliver Wide','','$218.00')		
+					.col-md-4
+						.imag
+							img(src="./images/c2.jpg" alt="")
+						+sector2('Deliver Wide','$242.00','$218.00')
+					.col-md-4
+						.imag
+							img(src="./images/e2.jpg" alt="")
+						+sector2('Deliver Wide','','$218.00')
+		.latest
+			.container
+				.row
+					.col-md-4
+						hr
+						hr
+					.col-md-4
+						ul.flexing
+							li
+								i.fa.fa-angle-left
+							li 
+								a BLOG
+							li
+								i.fa.fa-angle-right
+					.col-md-4
+						hr
+						hr
+		.blog
+			.container
+				.row
+					.col-md-3
+						img(src="./images/blog2.jpg" alt="")
+						.cont
+							h2 
+								a(href="#") THE SAMPLE HEADING TITLE
+							.date 27/11/2015
+							p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+							.mas
+								a(href="#") Read more...
+					.col-md-3
+						img(src="./images/blog1.jpg" alt="")
+						.cont
+							h2 
+								a(href="#") THE SAMPLE HEADING TITLE
+							.date 27/11/2015
+							p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+							.mas
+								a(href="#") Read more...
+					.col-md-3
+						img(src="./images/blog2.jpg" alt="")
+						.cont
+							h2 
+								a(href="#") THE SAMPLE HEADING TITLE
+							.date 27/11/2015
+							p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+							.mas
+								a(href="#") Read more...
+					.col-md-3
+						img(src="./images/blog3.jpg" alt="")
+						.cont
+							h2 
+								a(href="#") THE SAMPLE HEADING TITLE
+							.date 27/11/2015
+							p Lorem ipsum dolor sit amet, consectetur adipisic ing elit, sed do...
+							.mas
+								a(href="#") Read more...
+		.pedidos
+			.container
+				.row
+					.col-xs-12.col-md-4
+						.order
+							span
+								i.fa.fa-phone-square
+							.derecha
+								p.encabez ORDER ONLINE NOW
+								p.subti  Call Us: 
+									span (0123) 456 789
+					.col-xs-12.col-md-4
+						.order
+							span
+								i.fa.fa-plane
+							.derecha
+								p.encabez FREE WORLDWIDE SHIPPING
+								p.subti  On Order Over $100
+					.col-xs-12.col-md-4
+						.order
+							span
+								i.fa.fa-money
+							.derecha
+								p.encabez 30 DAYS MONEY BACK 100%
+								p.subti Satisfaction Guarantee
+		include footer

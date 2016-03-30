@@ -1,0 +1,61 @@
+body {
+	color: $texto;
+	font-size: 13px;
+	font-family: 'Lato', sans-serif;
+	h1, h2, h3, h4, h5, h6 {
+		margin: 0 0 10px;
+	}
+}
+
+header{
+	.barra1{
+		background-color: $gris-semi;
+		min-height: 40px;
+		padding: 5px 0px 3px 0px;
+		border-bottom: 1px solid $borde;
+		.default-msg {
+			height: 41px;
+			line-height: 39px;
+			padding-left: 15px;
+		}
+		.sett{
+			ul{
+				@include ulstyle;
+			}
+			li {
+				padding-top: 12px;
+				display: inline-block;
+				padding-bottom: 12px;
+				padding-left: 20px;
+				a{
+					@include astyle;
+				}
+			}
+			img, i{
+				padding-right: 5px;
+			}		
+		}
+	}
+	.barra2{
+		padding: 47px 0;
+		.icono{
+			font-size: 40px;
+			margin-right: 10px;
+		}
+		.date{
+			p {
+				font-size: 12px;
+			    padding-top: 6px;
+			    span{
+			    	clear: both;
+			    }
+			    .o-time{
+			    	font-size: 20px;
+					letter-spacing: 1px;
+			    }
+			}
+		}
+	}
+}
+
+
